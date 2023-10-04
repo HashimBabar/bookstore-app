@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bookstoreapplication.CustomerStartScreenController">
+   <children>
+      <TableView id="tbl_customerbooks" fx:id="tbl_customerbooks" layoutX="200.0" layoutY="100.0" prefHeight="380.0" prefWidth="600.0" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="120.0">
+        <columns>
+          <TableColumn id="col_bookname" fx:id="col_bookname" minWidth="350.0" prefWidth="350.0" text="Book Name" />
+          <TableColumn id="col_bookprice" fx:id="col_bookprice" minWidth="200.0" prefWidth="200.0" text="Book Price" />
+            <TableColumn id="col_bookprice" fx:id="col_bookselect" minWidth="54.0" prefWidth="71.0" text="Select" />
+        </columns>
+      </TableView>
+      <Label fx:id="customerMessage" alignment="CENTER" layoutY="54.0" prefHeight="25.0" prefWidth="640.0" text="su doggy" textAlignment="CENTER" AnchorPane.bottomAnchor="521.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="54.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="BuyAndRedeemButton" layoutX="26.0" layoutY="546.0" mnemonicParsing="false" onAction="#customerBuyAndRedeem" text="Redeem Points and Buy" />
+      <Button fx:id="BuyButton" layoutX="26.0" layoutY="510.0" mnemonicParsing="false" onAction="#customerBuy" text="Buy" />
+      <Button fx:id="logoutButton" layoutX="566.0" layoutY="546.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+   </children>
+</AnchorPane>

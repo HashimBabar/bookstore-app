@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bookstoreapplication.OwnersBookScreenController">
+   <children>
+      <TableView id="tbl_books" fx:id="tbl_books" layoutX="7.0" layoutY="73.0" prefHeight="384.0" prefWidth="626.0">
+        <columns>
+          <TableColumn id="BookName" fx:id="BookName" prefWidth="324.00006103515625" text="Book Name" />
+          <TableColumn id="BookPrice" fx:id="BookPrice" prefWidth="299.199951171875" text="Book Price" />
+        </columns>
+      </TableView>
+      <TextField id="txt_name" fx:id="txt_name" layoutX="121.0" layoutY="474.0" prefHeight="26.0" prefWidth="181.0" />
+      <Button id="btn_price" fx:id="btn_price" layoutX="536.0" layoutY="474.0" mnemonicParsing="false" onAction="#AddBook" prefHeight="26.0" prefWidth="89.0" text="Add" />
+      <Label id="lbl_price" fx:id="lbl_price" layoutX="311.0" layoutY="473.0" text="Price">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label id="lbl_price" fx:id="lbl_price" layoutX="60.0" layoutY="473.0" text="Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField id="txt_price" fx:id="txt_price" layoutX="366.0" layoutY="474.0" prefHeight="26.0" prefWidth="163.0" />
+      <Button id="btn_back" fx:id="btn_back" layoutX="403.0" layoutY="524.0" mnemonicParsing="false" onAction="#BackOwnersBookScreen" prefHeight="26.0" prefWidth="89.0" text="Back" />
+      <Button id="btn_delete" fx:id="btn_delete" layoutX="155.0" layoutY="524.0" mnemonicParsing="false" onAction="#DeleteBook" prefHeight="26.0" prefWidth="89.0" text="Delete" />
+      <Label id="lbl_OwnerBookScreenTitle" fx:id="lbl_OwnerBookScreenTitle" layoutX="213.0" layoutY="23.0" prefHeight="35.0" prefWidth="235.0" text="Owner's Book Screen" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

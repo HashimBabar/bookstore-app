@@ -1,0 +1,1 @@
+A Java-based bookstore application integrated with JavaFX for its user interface.

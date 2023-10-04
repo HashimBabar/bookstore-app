@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bookstoreapplication.LoginScreenController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="124.0" layoutY="27.0" text="Welcome to our Bookstore Application" AnchorPane.bottomAnchor="338.0" AnchorPane.leftAnchor="65.0" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="27.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label id="lbl_password" layoutX="90.0" layoutY="179.0" text="Password" />
+      <Label id="lbl_Username" layoutX="90.0" layoutY="106.0" text="Username" />
+      <TextField id="txt_username" fx:id="txt_username" layoutX="216.0" layoutY="101.0" prefHeight="31.0" prefWidth="230.0" />
+      <PasswordField id="txt_password" fx:id="txt_password" layoutX="216.0" layoutY="174.0" prefHeight="31.0" prefWidth="230.0" />
+      <Button fx:id="button_login" layoutX="306.0" layoutY="275.0" mnemonicParsing="false" onAction="#CheckLogin" text="Login" />
+      <Label fx:id="loginFail" layoutX="251.0" layoutY="224.0" prefHeight="17.0" prefWidth="148.0" text="INCORRECT USER OR PASS" textAlignment="CENTER" textFill="RED" visible="false" />
+   </children>
+</AnchorPane>
